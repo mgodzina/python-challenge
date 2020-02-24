@@ -7,5 +7,5 @@ user = contents.split('un: ')[1].split('\'')[1]
 passwd = contents.split('pw: ')[1].split('\'')[1]
 
 
-print(bz2.decompress(user.encode("raw_unicode_escape")))
-print(bz2.decompress(passwd.encode("raw_unicode_escape")))
+print('user: '+ bz2.decompress(user.encode("raw_unicode_escape")).decode())
+print('password: '+bz2.decompress(passwd.encode("raw_unicode_escape")).decode())
