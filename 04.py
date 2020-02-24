@@ -20,6 +20,6 @@ while(next>0):
         print(nothing)
 
 request_url = urllib.request.urlopen('http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=' + str(nothing))
-contents = str(request_url.read())[2:-1]
+contents = str(request_url.read().decode())
 print(contents)
 print("http://www.pythonchallenge.com/pc/def/" + contents)
