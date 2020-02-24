@@ -1,4 +1,9 @@
-input  = open('03_import', 'r').read().replace('\n', '').replace('\r', '') #file closing left for garbage collection
+import urllib.request
+import re
+
+request_url = urllib.request.urlopen('http://www.pythonchallenge.com/pc/def/equality.html')
+contents = str(request_url.read()).replace('\\n', '').replace('\\r', '')
+input = re.split("<!--|--!>",contents)[1]
 
 output = ''
 for i in range(len(input)-9):
