@@ -12,3 +12,4 @@ for i in range(len(input)-9):
         print(input[i], input[i + 1:i + 4], input[i + 4], input[i + 5:i + 8], input[i + 8])
 
 print(output)
+print("http://www.pythonchallenge.com/pc/def/" + output +".html")
