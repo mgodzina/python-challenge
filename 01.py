@@ -1,4 +1,5 @@
 input = "g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj."
+input2= "map"
 
 #original solution
 def decode(str, n):
@@ -13,7 +14,7 @@ def decode(str, n):
             output= output + char
     return output
 
-#solution includinh hint
+#solution including hint
 def decode_by_hint(str):
     table_in = "abcdefghijklmnopqrstuvwxyz"
     table_out = "cdefghijklmnopqrstuvwxyzab"
@@ -21,3 +22,4 @@ def decode_by_hint(str):
 
 print(decode(input,2))
 print(decode_by_hint(input))
+print("http://www.pythonchallenge.com/pc/def/" + decode(input2,2) + ".html")
